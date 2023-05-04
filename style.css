@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    /* background-color: black; */
+    margin: 0rem;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+a {text-decoration: none;}
+
+section {
+    height: 100vh;
+    position: relative;
+}
+
+.men {
+    background: #000;
+    color: #fff;
+}
+
+section .men-details .title {
+    position: absolute;
+    color: transparent;
+    top: 50%;
+    left: 10%;
+    font-size: 20vw;
+    transform: translate(0, -50%);
+    -webkit-text-stroke: 2px white;
+    user-select: none;
+    font-family: "Bodoni Moda";
+
+}
+
+#image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+}
+
+/* Banner */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: #1a1810;
+}
+.column {
+    width: 50%;
+    height: 100vh;
+}
+
+.left {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("./images/banner.jpg") no-repeat 50% 0%;
+    background-size: cover;
+    padding: 1em;
+}
+
+.right {
+    display: flex;
+    padding: 120px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    width: 10vw;
+    height: 20vh;
+    margin: 6px;
+}
+
+.img-1 {
+    background: url("./images/banner1.jpg") no-repeat 50% 0%;
+    background-size: cover;
+}
+.img-2 {
+    background: url("./images/banner2.jpg") no-repeat 50% 0%;
+    background-size: cover;
+}
+.img-3 {
+    background: url("./images/banner3.jpg") no-repeat 50% 0%;
+    background-size: cover;
+}
+.img-4 {
+    background: url("./images/banner4.png") no-repeat 50% 0%;
+    background-size: cover;
+}
+
+.header {
+    color: #866131;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+    font-size: 3vw;
+    user-select: none;
+    pointer-events: none;
+}
+
+.header h1 { position: relative;}
+.ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.link a {
+    color: rebeccapurple;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    text-decoration: underline;
+    font-weight: 500;
+    font-family: "Source Code Pro";
+}
+
+.footer {
+    padding: 30px;
+    background: #f7f6f2;
+    position: relative;
+    text-align: center;
+}
+
+.block {
+    margin-top: 40px !important;
+}
+
+.footer .media {
+    top: 20px !important;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.media {
+    margin: 20px 0;
+}
+
+.media ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* section basic */
+.section {padding: 80px 40px;}
+
+.section p {
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+
+@media (min-width: 769px) {
+    .banner { display: flex;}
+    .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .column { width: 100%;}
+    .header {font-size: 6vw;}
+    .images {display: none;}
+    nav ul, #searchbox {display: none;}
+    #menu-icon {display: flex; color: white;}
+    .line {
+        width: 2vw;
+        height: 5px;
+        margin: 5px;
+        z-index: 10;
+    }
+    #slideout-menu {
+        display: block;
+    }
+    .media {
+        /* position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        margin: 0 auto;
+        text-align: center; */
+    }
+    /* .media ul {margin-right: 0;} */
+}
